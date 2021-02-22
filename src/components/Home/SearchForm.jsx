@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import {searchMovie, fetchMovies, setLoading} from '../../actions/searchActions'
 
-export default class SearchForm extends Component {
+class SearchForm extends Component {
 
     onChange = e =>{
         this.props.searchMovie(e.target.value)
