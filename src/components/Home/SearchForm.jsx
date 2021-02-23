@@ -13,6 +13,7 @@ class SearchForm extends Component {
         e.preventDefault();
         this.props.fetchMovies(this.props.text)
         this.props.setLoading()
+        console.log(this.props)
     }
 
     render() {

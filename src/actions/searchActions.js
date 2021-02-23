@@ -1,7 +1,6 @@
 import {FETCH_MOVIE ,SEARCH_MOVIE, FETCH_MOVIES, LOADING} from './types'
 import axios from 'axios';
-import {APIKey} from '../ApiKey';
-
+const APIKey = process.env.REACT_APP_APIKEY;
 
 export const searchMovie = text => dispatch =>{
     dispatch({
